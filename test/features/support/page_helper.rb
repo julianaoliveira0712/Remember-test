@@ -4,9 +4,13 @@ module Pages
     def login
         @login_page ||= Login_page.new
     end
-   
+
     def cadastro
      @cadastro_page ||= Cadastro_page.new
+    end
+
+    def home
+        @home_page ||= Home_page.new
     end
 
 end

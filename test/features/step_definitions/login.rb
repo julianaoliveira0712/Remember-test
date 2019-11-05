@@ -8,4 +8,7 @@ Dado("que eu esteja na tela de login") do
   
   Entao("verifico se estou na home") do
     expect(page).to have_current_path('http://remembertest.s3-website-us-east-1.amazonaws.com/userhome', url: true)
+    home.load
+    home.add_memoryline
+    home.memoryline_create_sucess
   end
