@@ -12,10 +12,10 @@ Contexto: Logar com sucesso
     # -para guardar momentos que realmente importam
 
 
-@memoryline
-Cenario:
-    Quando eu clicar no botão de adicionar memoryline
-    Entao verifico se foi criada uma nova memoryline
+# @memoryline
+# Cenario:
+#     Quando eu clicar no botão de adicionar memoryline
+#     Entao verifico se foi criada uma nova memoryline
     
 # @sair
 # Cenario:

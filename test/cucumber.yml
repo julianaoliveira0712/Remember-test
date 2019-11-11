@@ -1,7 +1,8 @@
 ---
 
-default: -p pretty -p homolog 
+default: -p pretty -p homolog -p html
 pretty: --format pretty
+html: --format html --out=results/report.html
 homolog: AMBIENTE=homolog
 producao: AMBIENTE=producao
 desenvolvimento: AMBIENTE= desenvolvimento
