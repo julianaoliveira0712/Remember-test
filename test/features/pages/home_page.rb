@@ -6,7 +6,7 @@ class Home_page < SitePrism::Page
     element :dropdown, '.MuiList-root MuiList-padding [role="menu"]'
     element :sair, '.MuiList-root MuiList-padding [text="Sair"]'
     element :button_sair, '.MuiPaper-root MuiPaper-elevation1 jss685 MuiPaper-rounded'
-    element :button_add_memoryline, '.MuiButtonBase-root MuiFab-root jss680 MuiFab-primary [aria-label="add"]'
+    element :button_add_memoryline, '.MuiSvgIcon-root [focusable="false"]'
     element :ver_memoryline_private, '.MuiSvgIcon-root jss1434 jss1435 [role="presentation"]'
     element :memoryline, 'a[href="/memoryline/?ref=5dc17b59527bb98d2f31a66d&title=Memory Line Vazia"]'
 

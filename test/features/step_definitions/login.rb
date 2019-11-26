@@ -12,3 +12,14 @@ Dado("que eu esteja na tela de login") do
     # home.add_memoryline
     # home.memoryline_create_sucess
   end
+
+  Quando("eu insiro credenciais invalidas") do
+    login.load
+    sleep(1)
+    login.logar_usuario('23785534000','rewurewoui')
+    sleep(2)
+end
+
+Entao("verifico o pop-up de erro na tela e saiu") do
+  login.mensagem_erro
+end

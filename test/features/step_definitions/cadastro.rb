@@ -3,7 +3,7 @@ Dado("que eu esteja na tela de cadastro") do
   end
   
   Quando("eu preencho todos os campos corretamente") do
-    cadastro.cadastrar_usuario('jefferson','oliveira','jeffyoliveira003@gmail.com','jeffy','goku003','1994-11-03')
+    cadastro.cadastrar_usuario('jefferson','oliveira','jeffyoliveira003@gmail.com','jeffy','Goku@003','03-11-1994')
   end
   
   Entao("verifico se vou para a tela de confirmação do email") do

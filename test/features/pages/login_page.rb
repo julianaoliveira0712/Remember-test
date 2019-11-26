@@ -19,4 +19,8 @@ class Login_page < SitePrism::Page
     def cadastrar_se
         cadastre_se.click
     end
+
+    def mensagem_erro
+        assert_text('Login falhou!')
+    end
 end

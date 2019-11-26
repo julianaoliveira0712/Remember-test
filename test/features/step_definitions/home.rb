@@ -11,9 +11,8 @@ Quando("eu clicar no botão de adicionar memoryline") do
   home.add_memoryline
 end
 
-Entao("verifico se foi criada uma nova memoryline") do
-  home.memoryline_create_sucess
-end
+# Entao("verifico se foi criada uma nova memoryline") do
+# end
 
 # Quando("eu clicar no dropdown") do
 #     home.perfil
