@@ -8,6 +8,7 @@ class Home_page < SitePrism::Page
     element :sair, '#sair'
     element :popupCriarMemoryline, '#form-dialog-title'
     element :comment, '#comment-content'
+    element :moment, 'img [id="moment-5ddc3abd133eea403ebe0099"]'
     def verificar_page
         assert_text('remember')
     end
@@ -30,12 +31,13 @@ class Home_page < SitePrism::Page
     end
 
     def popupCriarMemoryline
-        assert_text("Nome da MemoryLine")
+        # assert_text("Nome da MemoryLine")
+        fill_in "Nome da MemoryLine", with: 'garantindo o 10'
         click_button 'CRIAR'
     end
 
-    def verMoment(id)
-        find(id).click
+    def verMoment
+        find(moment).click
     end
 
     def fazerComment
