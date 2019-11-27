@@ -36,6 +36,10 @@ class Cadastro_page < SitePrism::Page
         click_link 'Voltar para o login'
     end
 
+    def mensagem_errocad
+        assert_text('Ocorreu um erro inesperado :(')
+    end
+
    
 end
         
