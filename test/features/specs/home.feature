@@ -15,9 +15,7 @@ Contexto: Logar com sucesso
 @memoryline
 Cenario:
     Quando eu clicar no botão de adicionar memoryline
-    Entao verifico se foi criada uma nova memoryline
-    E clico em um moment
-    E realizo um comentario
+   
     
 # @sair
 # Cenario:

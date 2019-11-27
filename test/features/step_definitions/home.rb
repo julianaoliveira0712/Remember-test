@@ -3,35 +3,15 @@ Dado("usuário logado acessa a home") do
   login.logar_usuario('jujuba','Aoishiori@07')
   home.load
   home.verificar_page
-  home.dropdown('juliana')
+  #home.dropdown('juliana')
 end
 
 Quando("eu clicar no botão de adicionar memoryline") do
   home.add_memoryline
+  sleep(2)
   home.popupCriarMemoryline
+  sleep(2)
 end
-
-Entao("verifico se foi criada uma nova memoryline") do
-  home.verificar_page
-  home.entrarMemoryline
-end
-
-Entao("clico em um moment") do
- home.verMoment
-end
-
-Entao("realizo um comentario") do
- home.fazerComment
-end
-
-# Quando("eu clicar no dropdown") do
-#   pending # Write code here that turns the phrase above into concrete actions
-# end
-
-# Entao("clico no campo sair") do
-#   pending # Write code here that turns the phrase above into concrete actions
-# end
-
 
 
 

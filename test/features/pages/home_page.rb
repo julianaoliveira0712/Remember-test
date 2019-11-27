@@ -3,12 +3,13 @@ class Home_page < SitePrism::Page
 
     element :remember, 'p[to="/userhome"]'
     element :perfil, 'button[aria-controls="simple-menu"]'
-    element :add_memoryline, 'button[aria-label="add"]'
+    element :add_memoryline, '#button_new'
     element :memoryline, 'a[href="/memoryline/?ref=5ddb3c1c4cfb20ff61b7b057&title=HxH"]'
     element :sair, '#sair'
     element :popupCriarMemoryline, '#form-dialog-title'
     element :comment, '#comment-content'
     element :moment, 'img [id="moment-5ddc3abd133eea403ebe0099"]'
+    element :nome, '#id_nome'
     def verificar_page
         assert_text('remember')
     end
@@ -18,7 +19,7 @@ class Home_page < SitePrism::Page
     end
 
     def add_memoryline
-        add_memoryline.click
+        find('#button_new').click
     end
 
     def sair
@@ -32,8 +33,11 @@ class Home_page < SitePrism::Page
 
     def popupCriarMemoryline
         # assert_text("Nome da MemoryLine")
-        fill_in "Nome da MemoryLine", with: 'garantindo o 10'
-        click_button 'CRIAR'
+        #find(nome).click
+         fill_in "Nome da MemoryLine",with: "garantindo o 10"
+         find('#id_criar').click
+
+        #click_button 'CRIAR'
     end
 
     def verMoment
